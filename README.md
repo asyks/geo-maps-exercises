@@ -1,7 +1,5 @@
-# Urban Airship Software Engineer Question
+## Where is ISS at?
 
-##Option 1: Where is ISS at?
- 
 __Requirements:__
 
  1. Write a server-side script that can get location data for the ISS (You can use the API available to you http://wheretheiss.at/w/developer for data).
@@ -12,7 +10,7 @@ __Solution:__
 
 * My solution can be accessed at path: /iss/
 
-##Option 2: Shoots some hoops (ADVANCED)
+## Shoots some hoops (ADVANCED)
  
 __Requirements:__
 
