@@ -11,8 +11,9 @@ __Solution:__
 * My solution can be accessed at path: /iss/
 
 __Components__:
- * Python 2.7 - liscense: http://opensource.org/licenses/Python-2.0
- * Django 1.6 - liscense: https://github.com/django/django/blob/master/LICENSE
+
+* Python 2.7 - liscense: http://opensource.org/licenses/Python-2.0
+* Django 1.6 - liscense: https://github.com/django/django/blob/master/LICENSE
 
 ## Shoots some hoops
  
@@ -27,6 +28,7 @@ __Solution:__
 * My solution can be accessed at path: /hoops/
 
 __Components__:
- * Python 2.7 - liscense: http://opensource.org/licenses/Python-2.0
- * Django 1.6 - liscense: https://github.com/django/django/blob/master/LICENSE
- * My solution relies heavily on John D. Cook's distance between two coordinates algorthimn, which has been granted to the public domain, located here: http://www.johndcook.com/python_longitude_latitude.html
+
+* Python 2.7 - liscense: http://opensource.org/licenses/Python-2.0
+* Django 1.6 - liscense: https://github.com/django/django/blob/master/LICENSE
+* My solution relies heavily on John D. Cook's distance between two coordinates algorthimn, which has been granted to the public domain, located here: http://www.johndcook.com/python_longitude_latitude.html
