@@ -30,6 +30,6 @@ You may do anything that you want with the SimPL text; it's a license form to us
 
 ##Acknowledgements:
 
-Distance between two coordinates algorthimn adapted from http://www.johndcook.com/python_longitude_latitude.html, which is located here: http://www.johndcook.com/python_longitude_latitude.html
-Python 2.7 liscense: http://opensource.org/licenses/Python-2.0
-Django 1.6 liscense: https://github.com/django/django/blob/master/LICENSE
+* Distance between two coordinates algorthimn adapted from http://www.johndcook.com/python_longitude_latitude.html, which is located here: http://www.johndcook.com/python_longitude_latitude.html
+* Python 2.7 liscense: http://opensource.org/licenses/Python-2.0
+* Django 1.6 liscense: https://github.com/django/django/blob/master/LICENSE
