@@ -1,4 +1,4 @@
-#Tic Tac Toe
+#Geo-Location Maps Exercises
 
 ##Components:
  * Python 2.7
