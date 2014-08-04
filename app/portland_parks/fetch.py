@@ -13,6 +13,7 @@ class PortlandParksAPIDataProcessor(object):
     COUNT = 50
     EARTHS_RADIUS = 3963.1676 
     BASKETBALL_COURT_AMENITY_NAME = 'basketball court'
+    PORTLAND_PARKS_API_URL = 'http://api.civicapps.org/parks/near/{lon},{lat}?count={cnt}'
 
     def distance_between(self, coord1, coord2):
         # Convert latitude and longitude to 
@@ -54,10 +55,9 @@ class PortlandParksAPIDataProcessor(object):
 
     def fetch_park_data(self):
         PORTLAND_PARKS_DATA_NAME = 'results'
-        PORTLAND_PARKS_API_URL = 'http://api.civicapps.org/parks/near/{lon},{lat}?count={cnt}'\
-                                 .format(lon=self.LONGITUDE, lat=self.LATITUDE, cnt=self.COUNT)
         # Request a list of Portland Parks near the the given coordinates
-        request = urllib2.Request(PORTLAND_PARKS_API_URL) 
+        request = urllib2.Request(self.PORTLAND_PARKS_API_URL.\
+                                  format(lon=self.LONGITUDE, lat=self.LATITUDE, cnt=self.COUNT)) 
         response = urllib2.urlopen(request)
         response = response.read()
         self.portland_parks = json.loads(response).get(PORTLAND_PARKS_DATA_NAME)

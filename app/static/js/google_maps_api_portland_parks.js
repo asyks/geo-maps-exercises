@@ -9,6 +9,12 @@
       var uaLatLng = new google.maps.LatLng(ua_latitude, ua_longitude);
       var mapOptions = {zoom: 13, center: uaLatLng};
       map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var marker = new google.maps.Marker({
+                                           position: uaLatLng,
+                                           map: map,
+                                           title: 'Urban Airship HQ',
+                                           icon: '/static/img/ua-logo.png?v=3'
+                                          });
       $(portland_basketball_parks).each(function() {
         thing = $(this)
         park_lat_lng = new google.maps.LatLng($(this).attr('loc')['lat'], $(this).attr('loc')['lon']);

@@ -5,13 +5,13 @@ from pprint import pprint
 
 class ISSAPIDataProcessor(object):
     iss_detail_data = None
+    ISS_SATELLITES_LIST_URL = 'https://api.wheretheiss.at/v1/satellites'
+    ISS_SATELLITE_DETAIL_URL = 'https://api.wheretheiss.at/v1/satellites/%s'
 
     def fetch_iss_data(self):
         ISS_RESPONSE_DATA_NAME = 'iss'
-        ISS_SATELLITES_LIST_URL = 'https://api.wheretheiss.at/v1/satellites'
-        ISS_SATELLITE_DETAIL_URL = 'https://api.wheretheiss.at/v1/satellites/%s'
         # Request a list of ISS satellites
-        request = urllib2.Request(ISS_SATELLITES_LIST_URL) 
+        request = urllib2.Request(self.ISS_SATELLITES_LIST_URL) 
         response = urllib2.urlopen(request)
         response = response.read()
         satellites = json.loads(response)
@@ -22,7 +22,7 @@ class ISSAPIDataProcessor(object):
         iss_detail_data = None
         if iss_id is not None:
             # If the iss_id is not None then try retrieving detailed info on the satellite with that id
-            request = urllib2.Request(ISS_SATELLITE_DETAIL_URL % iss_id) 
+            request = urllib2.Request(self.ISS_SATELLITE_DETAIL_URL % iss_id) 
             response = urllib2.urlopen(request)
             response = response.read()
             iss_detail_data = json.loads(response)

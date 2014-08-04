@@ -14,7 +14,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^iss/', ISSLocationView.as_view(), name='iss_location_view'),
     url(r'^ajax/iss/', retrieve_iss_lat_long, name='retrieve_iss_lat_long'),
-    url(r'^hoops/', PortlandParksView.as_view(), name='iss_location_view'),
+    url(r'^hoops/', PortlandParksView.as_view(), name='hoops_location_view'),
     url(r'^ajax/hoops/', retrieve_portland_basketball_parks, name='retrieve_portland_basketball_parks'),
     url(r'^$', HomeView.as_view(), name='home_view'),
 )

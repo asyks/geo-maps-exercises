@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="id_title" class="title">Hello World!</div>
+
+<div id="id_title" class="title">
+    Option 1:
+    <span><a href={% url 'iss_location_view' %}>ISS Location</a></span>
+</div>
+
+<div id="id_title" class="title">
+    Option 2:
+    <span><a href={% url 'hoops_location_view' %}>Hoops Locations</a></span>
+</div>
+
 {% endblock %}
