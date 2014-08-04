@@ -10,7 +10,7 @@ __Solution:__
 
 * My solution can be accessed at path: /iss/
 
-## Shoots some hoops (ADVANCED)
+## Shoots some hoops
  
 __Requirements:__
 
