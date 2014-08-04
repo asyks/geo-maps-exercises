@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<title>ISS Geo Location</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script language="Javascript" src={% static "js/google_maps_api_iss_location.js" %}></script>
+{% endblock %}
+
+{% block content %}
+<div id="id_title" class="title">International Space Station is currently orbiting above:</div>
+<div id="map-canvas"></div>
+{% endblock %}
